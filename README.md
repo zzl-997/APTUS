@@ -6,6 +6,6 @@
 
 Scan the QR code below to access the demo:  
 
-![QR Code](APTUS Mini-program QR code.png)  
+![QR Code](APTUS_Mini-program_QR_code.png)  
 
 *Note: This is an early beta - features may be limited and subject to change.*
