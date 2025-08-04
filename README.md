@@ -2,7 +2,7 @@
 
 🚀 **Beta version now available for testing!**  
 
-Scan the QR code below to access the demo:  
+Scan the QR code below with the wechat APP to access the demo:  
 
 ![QR Code](APTUS_Mini-program_QR_code.png)  
 
