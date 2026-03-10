@@ -1,12 +1,16 @@
 # APTUS-AI-powered-Patient-centric-acne-Treatment-via-a-Unified-skin-management-System
 
-🚀 **Beta version now available for testing!**  
+## 📱 Live Demo
 
-Scan the QR code below with the wechat APP to access the demo:  
+Want to see our model in action? Try our mobile web demo:
 
-![QR Code](APTUS_Mini-program_QR_code.png)  
+👉 **[Click here to try APTUS](https://skin.beifuting.com/index)** 👈
 
-*Note: This is an early beta - features may be limited and subject to change.*
+*Best viewed on mobile devices. Simply scan three facial views (left, front, right) to see acne detection results.*
+
+---
+
+*Note: The demo link opens in your mobile browser - no installation required.*
 
 ## 📦 Installation
 ### Clone the Repository
@@ -103,6 +107,51 @@ python /../yolov9/segment/val.py \
     --save-json \
 ```
 
+# Multi-View Face Mesh Optimization - Configuration Guide
+
+## 📋 Parameter Summary
+
+| Parameter | Description | Example Value |
+|-----------|-------------|---------------|
+| `is_match` | Enable/disable matching between views | `True` |
+| `match_method` | Matching algorithm: 'hungarian' (optimal) or 'greedy' (fast) | `'hungarian'` |
+| `distance_scale` | Scaling factor for matching distance threshold | `1.5` |
+| `facemesh_confidence` | MediaPipe face detection confidence (0-1) | `0.5` |
+| `landmark_numbers` | Number of facial landmarks (MediaPipe default: 468) | `468` |
+| `class_threshold_strict` | High-confidence threshold per class | `{'class': 0.7}` |
+| `class_threshold_loose` | Minimum confidence threshold per class | `{'class': 0.3}` |
+| `float_max` | Large value for cost matrix infinity | `1e10` |
+
+## 🚀 Quick Start Example
+
+```python
+config = {
+    # Matching control
+    'is_match': True,
+    'match_method': 'hungarian',      # 'hungarian' or 'greedy'
+    'distance_scale': 1.5,            # Higher = more matches
+    
+    # Face detection
+    'facemesh_confidence': 0.5,       # MediaPipe confidence
+    'landmark_numbers': 468,          # MediaPipe landmarks
+    
+    # Class thresholds (customize for your classes)
+    'class_threshold_strict': {'lesion_name1': 0.7},   # Always show
+    'class_threshold_loose': {'lesion_name1': 0.55},    # Minimum confidence
+    'float_max': 1e10
+}
+```
+
+## 📌 Key Points
+
+- **Strict threshold**: Detections above this are always shown and used in strict matching
+- **Loose threshold**: Detections below this are filtered out
+
+
 ## 📝 License
 
-This project is licensed under the [MIT License](LICENSE).
+Dual-licensed:
+- **Original matching & optimization code**: [MIT License](LICENSE)
+- **YOLOv9-based detection module**: [GPL-3.0 License](https://www.gnu.org/licenses/gpl-3.0.html) (derived from [YOLOv9](https://github.com/WongKinYiu/yolov9))
+
+Please ensure compliance with both licenses when using this project.
