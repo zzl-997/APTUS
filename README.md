@@ -148,6 +148,17 @@ config = {
 - **Loose threshold**: Detections below this are filtered out
 
 
+## 📥 Additional Resources
+
+For more test images and trained model weights, please visit our Google Drive:
+
+👉 **[Download Test Images & Checkpoints](https://drive.google.com/drive/folders/1j6VwbNMtfRz-tRJwwrp_-p8ZBOJcTGyq?usp=drive_link)** 👈
+
+**Access Instructions:**
+1. Click the link above
+2. Request access (provide your name and affiliation)
+3. We will approve your request promptly
+
 ## 📝 License
 
 Dual-licensed:
