@@ -151,7 +151,7 @@ config = {
 ## 📝 License
 
 Dual-licensed:
-- **Original matching & optimization code**: [MIT License](LICENSE)-This code is distributed as a separate, independent module that communicates with the detection module through data interfaces. It does not constitute a derivative work of the GPL-licensed code and therefore remains under the permissive MIT license.
+- **Original matching & optimization code**: [MIT License](LICENSE.md)-This code is distributed as a separate, independent module that communicates with the detection module through data interfaces. It does not constitute a derivative work of the GPL-licensed code and therefore remains under the permissive MIT license.
 - **YOLOv9-based detection module**: [GPL-3.0 License](https://www.gnu.org/licenses/gpl-3.0.html)-- This module is a derivative work of ([YOLOv9](https://github.com/WongKinYiu/yolov9)) and inherits its GPL-3.0 license.
 The two components are designed as independent modules that can be used separately. When distributed together as a complete system, they form an "aggregate" as defined in GPL-3.0 Section 5, where including GPL-licensed code does not cause the license to apply to other independent parts.
 
