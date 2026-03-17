@@ -8,9 +8,15 @@ Want to see our model in action? Try our mobile web demo:
 
 *Best viewed on mobile devices. Simply scan three facial views (left, front, right) to see acne detection results.*
 
----
-
 *Note: The demo link opens in your mobile browser - no installation required.*
+
+### 📲 WeChat Mini Program
+
+If you have WeChat, you can also scan the QR code below to experience our mini program:
+
+<img src="./APTUS_Mini-program_QR_code.png" alt="WeChat QR Code" width="200" height="200">
+
+*Scan the code with WeChat to launch the mini program instantly.*
 
 ## 📦 Installation
 ### Clone the Repository
